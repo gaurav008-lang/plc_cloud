@@ -30,7 +30,7 @@ const Index = () => {
     // Set up Socket.IO events
     const serverUrl = window.location.hostname.includes('localhost') 
       ? 'http://localhost:5000'
-      : window.location.origin;
+      : 'https://plc-cloud-1.onrender.com';
     
     socketService.initialize(serverUrl, {
       onConnect: () => {
